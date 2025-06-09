@@ -1,0 +1,91 @@
+/* Fuente desde Google Fonts */
+ @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: hsl(234, 20%, 90%);
+}
+
+h1 {
+  font-size: 50px;
+}
+
+p {
+  font-size: 18px;
+}
+
+form input,
+form textarea {
+  font-size: 20px;
+}
+
+h1 {
+  font-weight: bold; /* o 700 */
+}
+
+strong {
+  font-weight: bold;
+}
+
+p.importante {
+  font-weight: 700;
+}
+
+header, nav, main, footer {
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 75px;
+  background-color: hsl(244, 94%, 21%);
+  padding: 15px;
+}
+
+nav a {
+  color: lab(97.5% 1.35 -0.62);
+  text-decoration: none;
+}
+
+nav a {
+  color: rgb(234, 221, 221);
+  text-decoration: none;
+  font-size: 18px;     /* Tamaño de letra más grande */
+  font-weight: bold;   /* Texto en negrita */
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  gap: 25px;
+  margin-top: 20px;
+}
+
+input, textarea, select, button {
+  padding: 10px;
+  font-size: 1em;
+}
+
+button {
+  background-color: lch(17.59% 43.21 293.65 / 0.945);
+  color: #faf8f8;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(244, 94%, 21%);
+}
+
+@media (max-width: 600px) {
+    nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}  

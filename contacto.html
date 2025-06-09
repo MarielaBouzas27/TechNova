@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <title>Contacto - TechNova</title>
+</head>
+<body>
+    <header>
+        <h1>Nuestro medio de contacto</h1>
+    </header>
+    <nav>
+        <ul>
+
+           <li><a href="index.html">Home</a></li>
+           <li><a href="nosotros.html">Nosotros</a></li>
+           <li><a href="clientes.html">Clientes</a></li>
+           <li><a href="contacto.html">Contacto</a></li>
+ 
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Si tienes alguna pregunta</h2>
+            <p>Si tienes alguna consulta o necesitas más información sobre nuestros servicios, no dudes en contactarnos.</p>
+            <p>Estamos aquí para ayudarte a encontrar la solución tecnológica que mejor se adapte a tus necesidades.</p>
+            <section id="contacto">
+             <h2>Formulario de contacto</h2>
+             <form id="formulario">
+               <label for="nombre">Nombre:</label>
+               <input type="text" id="nombre" name="nombre" required>
+
+               <label for="email">Correo electrónico:</label>
+               <input type="email" id="email" name="email" required>
+
+              <label for="fuente">¿Cómo te enteraste de nuestra empresa?</label>
+              <select id="fuente" name="fuente" onchange="mostrarEspecifique()">
+               <option value="">Seleccione una opción</option>
+               <option value="redes">Redes</option>
+               <option value="comentarios">Comentarios</option>
+               <option value="otro">Otro</option></select>
+
+               <div id="campo-especifique" style="display:none;">
+               <label for="especifique">Especifique:</label>
+               <textarea id="especifique" name="especifique"></textarea></div>
+               <label for="mensaje">Mensaje:</label>
+               <textarea id="mensaje" name="mensaje" required></textarea>
+
+              <button id="enviar" type="submit">Enviar</button>
+             </form>
+        </section>
+        <script src="javascript/javascript.js"></script>
+
+
+    </main>
+    <footer>
+        <p>&copy; 2025 TechNova. Todos los derechos reservados.</p>
+        <p>Contacto: <a href="mailto:info@technova.com">info@technova.com</a></p>
+        <p>Teléfono: +1 (555) 123-4567</p>
+        <p>Dirección: Calle Defensa 123, Córdoba, Argentina</p>
+    </footer>
+</body>
+</html>
