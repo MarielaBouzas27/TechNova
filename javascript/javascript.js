@@ -1,5 +1,5 @@
 document.getElementById("formulario").addEventListener("submit", function(event) {
-    event.preventDefault(); // Evitar el envío del formulario
+    event.preventDefault(); 
 
     // Obtener los valores de los campos
     var nombre = document.getElementById("nombre").value;
@@ -13,13 +13,5 @@ document.getElementById("formulario").addEventListener("submit", function(event)
         alert("Por favor, completa todos los campos requeridos.");
         return;
     }
-
-    // Aquí puedes agregar la lógica para enviar el formulario (por ejemplo, usando AJAX)
-
-    // Mostrar un mensaje de agradecimiento
     alert("¡Gracias por tu mensaje, " + nombre + "! Nos pondremos en contacto contigo pronto.");
 });
-
-
-
-
