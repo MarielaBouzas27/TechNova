@@ -3,7 +3,7 @@
 
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: hsl(234, 20%, 90%);
+  background-color: hsl(235, 42%, 55%);
 }
 
 h1 {
@@ -32,7 +32,7 @@ p.importante {
 }
 
 header, nav, main, footer {
-  padding: 15px;
+  padding: 10px;
 }
 
 
@@ -69,7 +69,7 @@ form {
 }
 
 input, textarea, select, button {
-  padding: 10px;
+  padding: 20px;
   font-size: 1em;
 }
 
@@ -96,8 +96,27 @@ button:hover {
   justify-content: space-between;
   align-items: center;
 }
-
 .encabezado img {
-  width: 250px; /* Ajustalo si querés más grande o más chico */
+  width: 350px; /* Ajustalo si querés más grande o más chico */
   height: auto;
+}
+.subtitulo {
+  text-align: center;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+.subtitulo h2 {
+  font-size: 50px;
+  color: #222;
+}
+@media (max-width: 600px) {
+  .encabezado {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .encabezado img {
+    width: 200px;
+    margin-top: 10px;
+  }
 }
