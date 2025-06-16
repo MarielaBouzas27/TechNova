@@ -7,7 +7,7 @@ body {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 60px;
 }
 
 p {
@@ -32,8 +32,9 @@ p.importante {
 }
 
 header, nav, main, footer {
-  padding: 20px;
+  padding: 15px;
 }
+
 
 nav ul {
   list-style: none;
@@ -89,3 +90,14 @@ button:hover {
     align-items: center;
   }
 }  
+/* Estilo para el encabezado con imagen alineada a la derecha */
+.encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.encabezado img {
+  width: 250px; /* Ajustalo si querés más grande o más chico */
+  height: auto;
+}
